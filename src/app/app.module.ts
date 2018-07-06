@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppComponent } from './app.component';
 
@@ -13,7 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
