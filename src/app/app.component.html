@@ -10,4 +10,12 @@
     <mat-icon class="example-icon">delete</mat-icon>
   </mat-toolbar-row>
 </mat-toolbar>
-<button mat-button>Guardar</button>
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <a href="https://material.angular.io/components/menu/api">API Menu</a>
+  </button>
+  <button mat-menu-item>
+    <a href="https://material.angular.io/components/menu/examples">Ejemplos Menu</a>
+  </button>
+</mat-menu>
