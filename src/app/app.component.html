@@ -6,16 +6,13 @@
     <mat-icon class="example-icon">
       <a href="https://www.android.com/" target="_blank">android</a>
     </mat-icon>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
+    <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Perfil</button>
+      <button mat-menu-item>Configuración</button>
+      <button mat-menu-item>Salir</button>
+    </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
-<button mat-button [matMenuTriggerFor]="menu">Menu</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>
-    <a href="https://material.angular.io/components/menu/api">API Menu</a>
-  </button>
-  <button mat-menu-item>
-    <a href="https://material.angular.io/components/menu/examples">Ejemplos Menu</a>
-  </button>
-</mat-menu>
